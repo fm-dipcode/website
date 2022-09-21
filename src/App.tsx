@@ -75,9 +75,13 @@ export function App() {
       <Spacer />
 
       <div class="h-[8rem] flex items-end z-10">
-        <button class="px-6 py-1.5 rounded-full border-[3px] border-gray-900 dark:border-gray-100 border-solid font-semibold hover:bg-primary-inverted text-primary hover:text-primary-inverted backdrop-blur-xl">
+        <a
+          href="mailto:helloworld@dipcode.org"
+          class="block px-6 py-1.5 rounded-full border-[3px] border-gray-900 dark:border-gray-100 border-solid font-semibold hover:bg-primary-inverted text-primary hover:text-primary-inverted backdrop-blur-xl"
+          rel="noopener noreferrer"
+        >
           <span class="uppercase text-[1.5rem]">Join Us</span>
-        </button>
+        </a>
       </div>
     </section>
   );
