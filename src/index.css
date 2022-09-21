@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bg-primary {
+    @apply bg-gray-100 dark:bg-gray-900;
+  }
+
+  .bg-primary-inverted {
+    @apply bg-gray-900 dark:bg-gray-100;
+  }
+
+  .text-primary {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+
+  .text-primary-inverted {
+    @apply text-gray-100 dark:text-gray-900;
+  }
+}
+
+:root {
+  font-family: "Space Grotesk", -system-ui, Helvetica, sans-serif;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  color: #101010;
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #fff;
+    background-color: #101010;
+  }
+}
