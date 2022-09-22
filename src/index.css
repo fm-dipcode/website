@@ -48,3 +48,18 @@ html, body, #app {
     background-color: #101010;
   }
 }
+
+.anim-scale-fade-in {
+  animation: scale-fade-in 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes scale-fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,35 @@
+.anim-stagger-to-right {
+  opacity: 0;
+  animation: stagger-to-right 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+
+  --stagger-base: 10px;
+}
+
+.anim-stagger-to-left {
+  opacity: 0;
+  animation: stagger-to-left 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+
+  --stagger-base: 10px;
+}
+
+@keyframes stagger-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(var(--xbase) - var(--stagger-base) * var(--stagger-index) * 2));
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(calc(var(--xbase) + 0px));
+  }
+}
+
+@keyframes stagger-to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(var(--xbase) + var(--stagger-base) * var(--stagger-index) * 2));
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(calc(var(--xbase) + 0px));
+  }
+}
