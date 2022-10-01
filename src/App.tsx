@@ -32,7 +32,7 @@ export function App() {
 
       <div class="h-[8rem] flex items-end z-10 anim-scale-fade-in">
         <a
-          href="mailto:helloworld@dipcode.org"
+          href="/join"
           class="block px-6 py-1.5 rounded-full border-[3px] border-gray-900 dark:border-gray-100 border-solid font-semibold hover:bg-primary-inverted text-primary hover:text-primary-inverted backdrop-blur-xl transition"
           rel="noopener noreferrer"
         >
